@@ -185,7 +185,7 @@ function process(msg)
 			    elseif text_:match("^[!/#](help)") and is_sudo(msg) then
       local text1 = [[
 	  
-<i>⚜Haji_Mokh_Radi⚜</i>
+⚜Haji_Mokh_Radi⚜
 /pm <userid> <text>
 ارسال <text> به <userid>
 /block <userid>
@@ -485,12 +485,13 @@ return tdcli.sendMessage(msg.chat_id_, 0, 1, text1, 1, "")
       local query = tostring(gps) .. " " .. tostring(sgps) .. " " .. tostring(pvs) .. " " .. tostring(links) .. " " .. tostring(sudo) .. " " .. tostring(contacts)
           local text = [[
 		  
-<i>⚜Haji_Mokh_Radi⚜</i>
-🔅Users : ]] .. tostring(pvs) .. [[
-🔅Groups : ]] .. tostring(gps) .. [[
-🔅SuperGroups : ]] .. tostring(sgps) .. [[
-🔅Saved Links : ]] .. tostring(links) .. [[
-🔅Saved Contacts : ]] .. tostring(contacts)
+⚜Haji_Mokh_Radi⚜
+🔅Users :.. tostring(pvs) .. [[
+🔅Groups :.. tostring(gps) .. [[
+🔅SuperGroups :.. tostring(sgps) .. [[
+🔅Saved Links :.. tostring(links) .. [[
+🔅Saved Contacts :.. tostring(contacts)
+🤖PV:@Bot_mebot]]
  return tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, "")
     elseif text_:match("^[!/#](addedmsg) (.*)") then
       local matches = {
