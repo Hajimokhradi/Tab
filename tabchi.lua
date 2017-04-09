@@ -249,7 +249,7 @@ function process(msg)
 آپدیت کردن فایل های ربات
 				
 —------—
-Help >> @Bot_mebot ]]
+PV >> @Bot_mebot ]]
 return tdcli.sendMessage(msg.chat_id_, 0, 1, text1, 1, "")
 	  
       elseif text_:match("^[!/#](remsudo) (%d+)") then
@@ -490,8 +490,8 @@ return tdcli.sendMessage(msg.chat_id_, 0, 1, text1, 1, "")
 🔅Groups : ]] .. tostring(gps) .. [[
 🔅SuperGroups : ]] .. tostring(sgps) .. [[
 🔅Saved Links : ]] .. tostring(links) .. [[
-🔅Saved Contacts : ]] .. tostring(contacts)
-🤖PV:@Bot_mebot]]
+🔅Saved Contacts : ]] .. tostring(contacts)[[
+🤖PV:@Bot_mebot
  return tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, "")
     elseif text_:match("^[!/#](addedmsg) (.*)") then
       local matches = {
